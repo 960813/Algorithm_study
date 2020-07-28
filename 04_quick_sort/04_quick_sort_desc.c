@@ -30,10 +30,9 @@ void quickSort(int* data, int pos_start, int pos_end)
             data[j] = data[i];
             data[i] = temp;
         }
-
-        quickSort(data, pos_start, j - 1);
-        quickSort(data, j + 1, pos_end);
     }
+    quickSort(data, pos_start, j - 1);
+    quickSort(data, j + 1, pos_end);
 }
 
 int main(void)
